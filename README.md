@@ -44,3 +44,19 @@ This is the code for Our KI paper: Artificial intelligence assists identificatio
         for idx in torch.topk(outputs, k=5).indices.squeeze(0).tolist():
             prob = torch.softmax(outputs, dim=1)[0, idx].item()
             print('{label:<75} ({p:.2f}%)'.format(label=labels_map[idx], p=prob*100))
+
+2. Introduction about the Cell/Mesangial Area Segmentation network - UNet
+    we tested U-Net, R2U-Net, Attention U-Net, Attention R2U-Net on Celland Mesangial Area Segmentation, refered to https://github.com/LeeJunHyun/Image_Segmentation implementation. And found that the Attention U-Net is the most suitable network for our specfic task. The readers can refer to the following papers for details. 
+    U-Net: Convolutional Networks for Biomedical Image Segmentation
+
+    https://arxiv.org/abs/1505.04597
+
+    Recurrent Residual Convolutional Neural Network based on U-Net (R2U-Net) for Medical Image Segmentation
+
+    https://arxiv.org/abs/1802.06955
+
+    Attention U-Net: Learning Where to Look for the Pancreas
+
+    https://arxiv.org/abs/1804.03999
+
+    Attention R2U-Net : Just integration of two recent advanced works (R2U-Net + Attention U-Net)
