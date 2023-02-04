@@ -62,4 +62,4 @@ This is the code for Our KI paper: Artificial intelligence assists identificatio
     Attention R2U-Net : Just integration of two recent advanced works (R2U-Net + Attention U-Net)
 
 3. Introduction about the Glomeruli Segmentation network - VNet
-   we implemented various vnet varients to tackling the glomeruli segmentation task. In the vnet folder, you can see 2.5d、3、fine_grained vnet network architecture, and different backbones used for vnet, and many losses used during training the network. The readers can easyily combine these together. We used keras framework to implement these things. 
+    we implemented various vnet varients to tackling the glomeruli segmentation task. In the vnet folder, you can see 2.5d、3、fine_grained vnet network architecture, and different backbones used for vnet, and many losses used during training the network. The readers can easyily combine these together. We used keras framework to implement these things. 
